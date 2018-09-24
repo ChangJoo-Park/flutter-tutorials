@@ -3,31 +3,31 @@ import 'package:flutter/material.dart';
 class AppPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return new AppPageState();
+    return AppPageState();
   }
 }
 
 class AppPageState extends State<AppPage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('플러터 라우팅'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('플러터 라우팅'),
       ),
-      body: new Column(
+      body: Column(
         children: <Widget>[
-          new Text(
+          Text(
             '앱 페이지',
             style: TextStyle(fontSize: 30.0),
           ),
-          new RaisedButton(
+          RaisedButton(
             onPressed: () {
               Navigator.pushNamed(
                 context,
                 '/login',
               );
             },
-            child: new Text('로그인 페이지로'),
+            child: Text('로그인 페이지로'),
           ),
         ],
       ),
