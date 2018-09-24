@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:routing_app/pages/app.dart';
-import 'package:routing_app/pages/signup.dart';
-import 'package:routing_app/pages/login.dart';
+import 'package:routing_app/pages/first.dart';
+import 'package:routing_app/pages/second.dart';
 
 final routes = {
-  '/': (BuildContext context) => AppPage(),
-  '/login': (BuildContext context) => LoginPage(),
-  '/signup': (BuildContext context) => SignUpPage(),
+  '/': (BuildContext context) => FirstPage(),
+  '/first': (BuildContext context) => FirstPage(),
+  '/second': (BuildContext context) => SecondPage(),
 };
