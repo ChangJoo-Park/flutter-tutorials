@@ -5,7 +5,7 @@ import 'package:routing_app/pages/signup.dart';
 import 'package:routing_app/pages/login.dart';
 
 final routes = {
-  '/': (BuildContext context) => new AppPage(),
-  '/login': (BuildContext context) => new LoginPage(),
-  '/signup': (BuildContext context) => new SignUpPage(),
+  '/': (BuildContext context) => AppPage(),
+  '/login': (BuildContext context) => LoginPage(),
+  '/signup': (BuildContext context) => SignUpPage(),
 };
